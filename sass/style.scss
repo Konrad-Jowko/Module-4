@@ -208,6 +208,7 @@ body {
   .portfolio {
     background-color: #f7f7f7;
     text-align: center;
+    padding-bottom: 120px;
 
     .portfolio-box {
       display: flex;
@@ -224,6 +225,57 @@ body {
         cursor: pointer;
       }
     }
+  }
+/* Footer */
+  .footer-box {
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
 
+    .copyright {
+      color: #555555;
+      font-family: $primary-font;
+      font-size: 14px;
+      line-height: 22px;
+      letter-spacing: -0.35px;
+      margin-top: 30px;
+      margin-right: -200px;
+      font-weight: bold;
+    }
+    .social {
+
+      .social-icons {
+        li {
+          text-decoration: none;
+          list-style-type: none;
+          font-size: 0;
+          display: inline-flex;
+          justify-content: flex-start;
+
+          &:last-of-type {
+            margin-right: 400px;
+          }
+
+          a {
+            color: #ffffff;
+            font-size: 0;
+
+            i {
+              width: 60px;
+              height: 60px;
+              font-size: 30px;
+              padding-top: 15px;
+              text-align: center;
+              background: #000000;
+              border-radius: 50%;
+
+              &:hover {
+                color: $primary-color;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
